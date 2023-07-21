@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.Color;
+import java.awt.Insets;
 import java.awt.Font;
 import java.awt.event.*;
 import java.sql.*;
@@ -144,17 +145,22 @@ public class ShareListPanel extends JPanel{
 		bottomPanel.setPreferredSize(new Dimension(100, 50));
 
 		cancelButton_ = new JButton("Cancel");
-		cancelButton_.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		cancelButton_.setFont(new Font("Lucida Grande", Font.PLAIN, 13));
+		// cancelButton_.setContentAreaFilled(false);
+		cancelButton_.setMargin(new Insets(0, 0, 0, 0));
+		cancelButton_.setBackground(Color.white);
 		cancelButton_.setBorderPainted(true);
-		cancelButton_.setBackground(new Color(0, 255, 0));
-		cancelButton_.setBounds(200, 10, 100, 30);
+		cancelButton_.setBounds(200, 10, 80, 30);
 		bottomPanel.add(cancelButton_);
 		
 		addButton_ = new JButton("Change");
 		addButton_.setFont(new Font("Lucida Grande", Font.PLAIN, 13));
+		// addButton_.setContentAreaFilled(false);
+		addButton_.setMargin(new Insets(0, 0, 0, 0));
+		addButton_.setBackground(Color.white);
 		addButton_.setForeground(new Color(0, 255, 0));
 		addButton_.setBorderPainted(true);
-		addButton_.setBounds(300, 10, 100, 30);
+		addButton_.setBounds(300, 10, 80, 30);
 		bottomPanel.add(addButton_);
 		this.add(bottomPanel, BorderLayout.SOUTH);
 

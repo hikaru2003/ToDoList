@@ -1,5 +1,5 @@
 
-
+import java.awt.Insets;
 import javax.swing.*;
 import java.awt.Color;
 import java.awt.Font;
@@ -105,6 +105,8 @@ public class CreateAccountPanel extends JPanel{
 		
 		createAccountButton_ = new JButton("<html><u>Create an account</u><html>");
 		createAccountButton_.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		createAccountButton_.setContentAreaFilled(false);
+		createAccountButton_.setMargin(new Insets(0, 0, 0, 0));
 		createAccountButton_.setForeground(new Color(0, 255, 0));
 		createAccountButton_.setBorderPainted(false);
 		createAccountButton_.setBounds(200, 280, 200, 30);
@@ -112,6 +114,9 @@ public class CreateAccountPanel extends JPanel{
 		
 		exitButton_ = new JButton("Cancel");
 		exitButton_.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		// exitButton_.setContentAreaFilled(false);
+		exitButton_.setMargin(new Insets(0, 0, 0, 0));
+		exitButton_.setBackground(Color.white);
 		exitButton_.setForeground(UIManager.getColor("Button.disabledText"));
 		exitButton_.setBorderPainted(true);
 		exitButton_.setBounds(250, 320, 100, 30);

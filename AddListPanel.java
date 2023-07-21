@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.util.Date;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Insets;
 import java.awt.event.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -128,17 +129,22 @@ public class AddListPanel extends JPanel{
 		shareGroup_.add(shareButton_);
 		
 		cancelButton_ = new JButton("Cancel");
-		cancelButton_.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		cancelButton_.setFont(new Font("Lucida Grande", Font.PLAIN, 13));
 		cancelButton_.setBorderPainted(true);
-		cancelButton_.setBackground(new Color(0, 255, 0));
-		cancelButton_.setBounds(200, 330, 100, 30);
+		// cancelButton_.setContentAreaFilled(false);
+		cancelButton_.setMargin(new Insets(0, 0, 0, 0));
+		cancelButton_.setBackground(Color.white);
+		cancelButton_.setBounds(200, 330, 80, 30);
 		this.add(cancelButton_);
 		
 		addButton_ = new JButton("Add");
 		addButton_.setFont(new Font("Lucida Grande", Font.PLAIN, 13));
+		// addButton_.setContentAreaFilled(false);
+		addButton_.setMargin(new Insets(0, 0, 0, 0));
+		addButton_.setBackground(Color.white);
 		addButton_.setForeground(new Color(0, 255, 0));
 		addButton_.setBorderPainted(true);
-		addButton_.setBounds(300, 330, 100, 30);
+		addButton_.setBounds(300, 330, 80, 30);
 		this.add(addButton_);
 
 		try
@@ -263,17 +269,22 @@ public class AddListPanel extends JPanel{
 		shareGroup_.add(shareButton_);
 		
 		cancelButton_ = new JButton("Cancel");
-		cancelButton_.setFont(new Font("Lucida Grande", Font.PLAIN, 15));
+		cancelButton_.setFont(new Font("Lucida Grande", Font.PLAIN, 13));
 		cancelButton_.setBorderPainted(true);
-		cancelButton_.setBackground(new Color(0, 255, 0));
-		cancelButton_.setBounds(200, 330, 100, 30);
+		// cancelButton_.setContentAreaFilled(false);
+		cancelButton_.setMargin(new Insets(0, 0, 0, 0));
+		cancelButton_.setBackground(Color.white);
+		cancelButton_.setBounds(200, 330, 80, 30);
 		this.add(cancelButton_);
 		
 		editButton_ = new JButton("Edit");
 		editButton_.setFont(new Font("Lucida Grande", Font.PLAIN, 13));
+		// editButton_.setContentAreaFilled(false);
+		editButton_.setMargin(new Insets(0, 0, 0, 0));
+		editButton_.setBackground(Color.white);
 		editButton_.setForeground(new Color(0, 255, 0));
 		editButton_.setBorderPainted(true);
-		editButton_.setBounds(300, 330, 100, 30);
+		editButton_.setBounds(300, 330, 80, 30);
 		this.add(editButton_);
 
 		myButtonListener_ = new MyButtonListener();
